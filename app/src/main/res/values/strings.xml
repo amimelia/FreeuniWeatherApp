@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="openWeatherAppKey">06bc52298afae7400c2f14c0bf3a4d06</string>
+
+    <string name="byhours_tab_text">By Hours</string>
+    <string name="days5_forecast_tab_text">5 Days</string>
+    <string name="app_name">FreeuniWeatherApp</string>
+    <string name="default_today_temp_text">0 °C</string>
+    <string name="one_day_default_text">No data</string>
+    <string name="one_day_default_wind_text">Wind: 0 m/s</string>
+    <string name="one_day_presure_default_text">Pressure: 0 hpa</string>
+    <string name="one_day_humidity_default_text">Humidity: 0 %</string>
+    <string name="one_day_sunset_default_text">Min Tmp: 0 °C</string>
+    <string name="one_day_sunrise_default_text">Max. Tmp: 0 °C</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_day_string">Sunday</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_weather_map">Show Map</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="one_day_content_margin_left">22dp</dimen>
+    <dimen name="one_day_content_margin_bottom">16dp</dimen>
+    <dimen name="one_day_content_margin_top">6dp</dimen>
+    <dimen name="one_day_tempriture_text_size">36dp</dimen>
+    <dimen name="one_day_description_text_size">16dp</dimen>
+    <dimen name="one_day_wind_text_size">16dp</dimen>
+    <dimen name="one_day_pressure_text_size">16dp</dimen>
+    <dimen name="one_day_humididty_text_size">16dp</dimen>
+    <dimen name="one_day_sunset_text_size">16dp</dimen>
+    <dimen name="one_day_sunrise_text_size">16dp</dimen>
+    <dimen name="one_day_icon_padding_right">42dp</dimen>
+    <dimen name="one_day_icon_text_size">72dp</dimen>
+    <dimen name="one_day_last_update_text_paddingr">16dp</dimen>
+    <dimen name="last_update_text_size">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="main_weather_icon_size">150dp</dimen>
+</resources>

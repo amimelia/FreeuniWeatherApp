@@ -1,0 +1,148 @@
+614371 Gumista
+874560 Ptitsefabrika
+874652 Orekhovo
+612366 Poti
+615994 Abzhaqva
+823854 Ipnari
+613220 Leselidze
+611694 Telavi
+614455 Gori
+874502 Ritsa
+612348 Pskhu
+612451 Patara-Shiraki
+611583 Tqvarcheli
+7667581 Telavi
+611716 Kalaki Tbilisi
+612287 Rustavi
+612652 Ochamchire
+613762 Kobuleti
+615860 Akhaltsikhe
+824288 Tsqaltubo
+6324644 Meria
+614540 Georgia
+6643410 Abkhazia
+865376 Tkhubun
+613270 Lechkopi
+611128 Volodarskoye
+611847 Sokhumi
+823912 Adzigezhi
+615912 Stantsiya Novyy Afon
+823895 Nizhneye Armyanskoye Ushchelye
+823894 Adzghapsha
+874469 Akui
+823893 Tsvkvara
+615564 Bombora
+613159 Likhni
+615460 Bichvinta
+613195 Lidzava
+615448 Blaburkhva
+615321 Bzipi
+874575 Zemo Khevi
+823850 Bzyb
+823851 Dzikhch’a
+824135 Otradnoe
+615782 Alpiiskoe
+799968 Bzyb’
+615910 Akhali-Gagra
+823853 Gagrap’sta
+874627 Gruzinskoye Ushchel’ye
+614622 Gagra
+612974 Migirlo
+614778 Jigrasheni
+615504 Beghleti
+865397 K’vemo Iasht’khva
+874453 Abaakhuda
+615219 Ch’erk’ezikhu
+615203 Chigripsh
+611403 Tskhinvali
+612269 Saburtalo
+614951 Didi-Goridzhvari
+865543 Samegrelo-Zemo Svanetis Mkhare
+610823 Zugdidis Raioni
+610824 Zugdidi
+865540 Shida Kartli
+613987 Khashuris Raioni
+613988 Khashuri
+865536 Kvemo Kartli
+7667578 Marneuli
+613074 Marneuli
+615419 Bolnisi
+612126 Samtredia
+614104 Kaspi
+865541 Mtskheta-Mtianeti
+615914 Akhalgori
+615583 Bakuriani
+7667714 Tsalka
+611548 Tsalka
+865537 Kakheti
+612338 Qvareli
+7667580 Gurjaani
+614351 Gurjaani
+613342 Lagodekhi
+612230 Sagarejo
+611373 Tsnori
+615929 Ajaria
+615532 Batumi
+865539 Imereti
+610864 Zestaponi
+612053 Senaki
+613607 Kutaisi
+616022 Abasha
+614890 Dmanisi
+611612 Tofaloglebi
+611062 Zeda-Bashi
+865851 Lilo
+611717 Tbilisi
+584502 Abastumani
+610849 Zhinvali
+611093 Zahesi
+611219 Vani
+611230 Vale
+611274 Ureki
+611398 Tsqneti
+611492 Tsinandali
+611551 Tsalenjikha
+611564 Tsaghveri
+611584 Tqibuli
+611669 Tianeti
+611674 Tetri Tsqaro
+611809 Surami
+611902 Sighnaghi
+611964 Shorapani
+612012 Naghvarevi
+612502 Pasanauri
+612592 Oni
+612648 Ochkhamuri
+612691 Ninotsminda
+612890 Mtskheta
+612987 Mestia
+613065 Martvili
+613093 Manglisi
+613125 Makhinjauri
+613226 Lentekhi
+613559 Kveda Chkhorotsqu
+613641 Kulashi
+613902 Khoni
+613918 Khobi
+614087 Stepantsminda
+614217 Java
+614409 Gudauta
+614575 Gardabani
+614580 Gantiadi
+614613 Gali
+614740 Jvari
+614897 Dioknisi
+614934 Didi Lilo
+615403 Borjomi
+615611 Bagdadi
+615660 Aspindza
+615776 Ambrolauri
+615844 Akhmeta
+615893 Akhalkalaki
+615921 Akhaldaba
+615943 Agara
+615973 Adigeni
+824385 Naruja
+824613 Bakurianis Andeziti
+6940391 Tskhinvali
+7667751 Kharagauli

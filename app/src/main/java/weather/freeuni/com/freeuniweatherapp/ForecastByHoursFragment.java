@@ -4,15 +4,25 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import weather.freeuni.com.freeuniweatherapp.Utils.GetWeekDayForDateStr;
+import weather.freeuni.com.freeuniweatherapp.adapters.ByHoursDataAdapter;
+import weather.freeuni.com.freeuniweatherapp.models.ParsedDaily5Model;
+import weather.freeuni.com.freeuniweatherapp.models.daily5.Daily5WeatherModel;
 
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link ForecastByHoursFragment.OnFragmentInteractionListener} interface
+ * {@link ForecastByHoursFragment.OnByHoursFragmentInteractionListener} interface
  * to handle interaction events.
  * Use the {@link ForecastByHoursFragment#newInstance} factory method to
  * create an instance of this fragment.
@@ -26,8 +36,8 @@ public class ForecastByHoursFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
-    private OnFragmentInteractionListener mListener;
+    ArrayList<weather.freeuni.com.freeuniweatherapp.models.daily5.List> weatherDataForCurDate  = new ArrayList<>();
+    private OnByHoursFragmentInteractionListener mListener;
 
     public ForecastByHoursFragment() {
         // Required empty public constructor
@@ -63,25 +73,46 @@ public class ForecastByHoursFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_forecast_by_hours, container, false);
+        View view = inflater.inflate(R.layout.by_hours_display_layout, container, false);
+        initRecViewver(view);
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
         if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
+            mListener.onForecastByHoursFragmentInteraction();
         }
+    }
+
+    RecyclerView mRecyclerView;
+    LinearLayoutManager mLayoutManager;
+    ByHoursDataAdapter mAdapter;
+
+    private void initRecViewver(View view){
+        mRecyclerView = (RecyclerView) view.findViewById(R.id.by_hours_recyle_view);
+
+        // use this setting to improve performance if you know that changes
+        // in content do not change the layout size of the RecyclerView
+        mRecyclerView.setHasFixedSize(true);
+
+        // use a linear layout manager
+        mLayoutManager = new LinearLayoutManager(App.getContext());
+        mRecyclerView.setLayoutManager(mLayoutManager);
+
+        // specify an adapter (see also next example)
+        mAdapter = new ByHoursDataAdapter(weatherDataForCurDate);
+        mRecyclerView.setAdapter(mAdapter);
     }
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener) {
-            mListener = (OnFragmentInteractionListener) context;
+        if (context instanceof OnByHoursFragmentInteractionListener) {
+            mListener = (OnByHoursFragmentInteractionListener) context;
         } else {
             throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
+                    + " must implement OnByHoursFragmentInteractionListener");
         }
     }
 
@@ -89,6 +120,26 @@ public class ForecastByHoursFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
         mListener = null;
+    }
+
+    public void displayWeatherData(Daily5WeatherModel data, String selectedIndx){
+        List<weather.freeuni.com.freeuniweatherapp.models.daily5.List> weatherDataForCurDate = new ArrayList<>();
+        for(weather.freeuni.com.freeuniweatherapp.models.daily5.List listItm : data.list){
+
+            String dateTxt = listItm.dtTxt.substring(0, 10);
+
+            if (dateTxt.equals(selectedIndx)){
+                weatherDataForCurDate.add(listItm);
+                //default time to take some features
+            }
+        }
+        setWeatherDataForCurDate(weatherDataForCurDate);
+    }
+
+    private void setWeatherDataForCurDate(List<weather.freeuni.com.freeuniweatherapp.models.daily5.List> weatherDataForCurDate){
+        this.weatherDataForCurDate.clear();
+        this.weatherDataForCurDate.addAll(weatherDataForCurDate);
+        mAdapter.notifyDataSetChanged();
     }
 
     /**
@@ -101,8 +152,8 @@ public class ForecastByHoursFragment extends Fragment {
      * "http://developer.android.com/training/basics/fragments/communicating.html"
      * >Communicating with Other Fragments</a> for more information.
      */
-    public interface OnFragmentInteractionListener {
+    public interface OnByHoursFragmentInteractionListener {
         // TODO: Update argument type and name
-        void onFragmentInteraction(Uri uri);
+        void onForecastByHoursFragmentInteraction();
     }
 }

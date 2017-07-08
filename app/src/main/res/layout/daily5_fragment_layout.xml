@@ -4,10 +4,33 @@
     android:layout_height="match_parent"
     tools:context="weather.freeuni.com.freeuniweatherapp.Daily5ForecastFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/single_days_holder"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="horizontal">
+
+        <include layout="@layout/daily5_single_day_item">
+
+        </include>
+
+        <include layout="@layout/daily5_single_day_item">
+
+        </include>
+
+        <include layout="@layout/daily5_single_day_item">
+
+        </include>
+
+        <include layout="@layout/daily5_single_day_item">
+
+        </include>
+
+        <include layout="@layout/daily5_single_day_item">
+
+        </include>
+
+
+    </LinearLayout>
 
 </FrameLayout>

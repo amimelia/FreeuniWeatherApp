@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/one_day_page"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+<android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll"
+        app:titleEnabled="false">
+
+        <android.support.v7.widget.Toolbar
+
+            android:id="@+id/one_day_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/one_day_content_margin_left"
+            android:layout_marginLeft="@dimen/one_day_content_margin_bottom"
+            android:layout_marginTop="@dimen/one_day_content_margin_top"
+            android:paddingTop="?attr/actionBarSize"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/day_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/default_today_temp_text"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/one_day_tempriture_text_size" />
+
+                <TextView
+                    android:id="@+id/day_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/one_day_default_text"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/one_day_description_text_size" />
+
+                <TextView
+                    android:id="@+id/day_wind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/one_day_default_wind_text"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/one_day_wind_text_size" />
+
+                <TextView
+                    android:id="@+id/day_pressure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/one_day_presure_default_text"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/one_day_pressure_text_size" />
+
+                <TextView
+                    android:id="@+id/day_humidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/one_day_humidity_default_text"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/one_day_humididty_text_size" />
+
+                <TextView
+                    android:id="@+id/day_sunrise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/one_day_sunrise_default_text"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/one_day_sunrise_text_size" />
+
+                <TextView
+                    android:id="@+id/day_sunset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/one_day_sunset_default_text"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/one_day_sunset_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:src="@drawable/cloud"
+                    android:id="@+id/day_icon"
+                    android:layout_width="@dimen/main_weather_icon_size"
+                    android:layout_height="@dimen/main_weather_icon_size"
+                    android:layout_gravity="end"
+                    android:paddingRight="@dimen/one_day_icon_padding_right"
+                    android:text=""
+                    android:textAlignment="viewEnd"
+                    android:textSize="@dimen/one_day_icon_text_size" />
+
+                <TextView
+                    android:text="Last Update: 8:39PM"
+                    android:id="@+id/data_last_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom|end"
+                    android:gravity="bottom|end"
+                    android:paddingRight="@dimen/one_day_last_update_text_paddingr"
+                    android:textAlignment="viewEnd"
+                    android:textSize="@dimen/last_update_text_size" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+    <android.support.design.widget.TabLayout
+        android:background="@color/colorPrimary"
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        app:tabTextColor="@color/colorTabText"
+        app:tabIndicatorColor="@color/tab_indicator">
+
+    </android.support.design.widget.TabLayout>
+
+
+</android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+       >
+
+    </android.support.v4.view.ViewPager>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

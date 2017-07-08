@@ -5,4 +5,6 @@ package weather.freeuni.com.freeuniweatherapp.models;
  */
 
 public class Country {
+    public int id;
+    public String name;
 }

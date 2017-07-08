@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_marker_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_blue_bright">
 
-</LinearLayout>
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/marker_text"
+        android:text="36  C"
+        android:textSize="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:id="@+id/profile_image"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@null"
+        android:src="@drawable/cloud" />
+</FrameLayout>
